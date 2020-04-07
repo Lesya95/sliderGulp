@@ -9,7 +9,7 @@ let gulp = require('gulp'),
 
 
 gulp.task('clean', async function () {
-    del.sync('dist')
+    del.sync('build')
 });
 
 gulp.task('scss', function () {
@@ -66,19 +66,19 @@ gulp.task('browser-sync', function() {
 
 gulp.task('export', function () {
     let buildHtml = gulp.src('app/**/*.html')
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('build'));
 
     let BuildCss = gulp.src('app/css/**/*.css')
-        .pipe(gulp.dest('dist/css'));
+        .pipe(gulp.dest('build/css'));
 
     let BuildJs = gulp.src('app/js/**/*.js')
-        .pipe(gulp.dest('dist/js'));
+        .pipe(gulp.dest('build/js'));
 
     let BuildFonts = gulp.src('app/fonts/**/*.*')
-        .pipe(gulp.dest('dist/fonts'));
+        .pipe(gulp.dest('build/fonts'));
 
     let BuildImg = gulp.src('app/img/**/*.*')
-        .pipe(gulp.dest('dist/img'));
+        .pipe(gulp.dest('build/img'));
 });
 
 gulp.task('watch', function () {
