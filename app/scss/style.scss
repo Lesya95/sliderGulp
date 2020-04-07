@@ -1,0 +1,56 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+
+
+body{
+    background: #e5d0ef;
+    padding: 0 5%;
+}
+h1{
+    width: 100%;
+    text-align: center;
+    color: rgb(48, 10, 41); 
+    font-size: 350%;
+    margin-bottom: 0;
+}
+hr{
+    width: 50%;
+    border-color: rgb(48, 10, 41);
+    background-color: rgb(48, 10, 41);
+}
+
+.wrapper{
+    max-width: 80%;
+    margin: 2.5% auto;
+}
+.sl__slide{
+    position: relative;
+}
+
+img{
+    max-width: 100%;
+    height: auto; 
+}
+
+
+
+.slick-dots li button:before{
+    font-size: 15px !important;
+}
+
+.popup-gallery{
+    width: 95%;
+    margin: 2.5% auto;
+    img{
+        width: 49.3%;
+        height: auto;
+    }
+    
+}
+
+
+
+
+@import "media";
+
